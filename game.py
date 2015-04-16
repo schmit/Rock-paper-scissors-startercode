@@ -4,8 +4,6 @@ Starter code for Stanford CME 193
 author: Sven Schmit
 '''
 
-from agent import *
-
 class Game:
     def __init__(self, agent1, agent2):
         self.moves_a1 = []
@@ -73,14 +71,3 @@ class Game:
 
         return 0
 
-# We can specify which agents we want to play the game here
-# Optional: pass this in using the command line
-game = Game(InstructorAgent(), InstructorAgent())
-
-# How many rounds do we want to play
-# Optional: pass this in using the command line
-number_rounds = 10
-game.play(number_rounds)
-
-# Print summary
-game.summary()
